@@ -1,0 +1,25 @@
+{
+    "name": "mnib-dev/coding-standard",
+    "type": "phpcodesniffer-standard",
+    "license": "MIT",
+    "require": {
+        "php": "^7.2",
+        "friendsofphp/php-cs-fixer": "^2.15"
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "MNIB\\CsFixer\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    }
+}
