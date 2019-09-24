@@ -41,7 +41,9 @@ final class Config extends BaseConfig
             'compact_nullable_typehint' => true,
             'concat_space' => ['spacing' => 'one'],
             'declare_equal_normalize' => ['space' => 'none'],
+            'explicit_indirect_variable' => true,
             'function_typehint_space' => true,
+            'fully_qualified_strict_types' => true,
             'general_phpdoc_annotation_remove' => [
                 'annotations' => [
                     'api',
@@ -72,6 +74,7 @@ final class Config extends BaseConfig
             'method_chaining_indentation' => true,
             'multiline_whitespace_before_semicolons' => ['strategy' => 'new_line_for_chained_calls'],
             'native_function_casing' => true,
+            'native_function_type_declaration_casing' => true,
             'new_with_braces' => true,
             'no_alternative_syntax' => true,
             'no_blank_lines_after_class_opening' => true,
@@ -100,6 +103,7 @@ final class Config extends BaseConfig
             'no_leading_namespace_whitespace' => true,
             'no_mixed_echo_print' => ['use' => 'echo'],
             'no_multiline_whitespace_around_double_arrow' => true,
+            'no_null_property_initialization' => true,
             'no_singleline_whitespace_before_semicolons' => true,
             'no_short_bool_cast' => true,
             'no_short_echo_tag' => true,
