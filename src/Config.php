@@ -156,7 +156,6 @@ final class Config extends BaseConfig
             'return_assignment' => true,
             'return_type_declaration' => true,
             'semicolon_after_instruction' => true,
-            'simplified_null_return' => true,
             'short_scalar_cast' => true,
             'single_blank_line_before_namespace' => true,
             'single_line_comment_style' => true,
