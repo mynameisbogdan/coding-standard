@@ -30,7 +30,6 @@ final class Config extends BaseConfig
                     'return',
                     'throw',
                     'try',
-                    'yield',
                 ],
             ],
             'cast_spaces' => ['space' => 'none'],
