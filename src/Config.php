@@ -32,6 +32,7 @@ final class Config extends BaseConfig
                     'try',
                 ],
             ],
+            'braces' => ['allow_single_line_closure' => true],
             'cast_spaces' => ['space' => 'none'],
             'class_attributes_separation' => true,
             'class_definition' => ['single_item_single_line' => true],
