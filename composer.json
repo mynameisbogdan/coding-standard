@@ -4,7 +4,7 @@
     "description": "Personal coding standards heavily based on Doctrine Coding Standard.",
     "license": "MIT",
     "require": {
-        "php": "^7.2 || ^8.0",
+        "php": "^7.2||^8.0",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2 || ^0.7",
         "friendsofphp/php-cs-fixer": "^2.15",
         "slevomat/coding-standard": "^6.3",
