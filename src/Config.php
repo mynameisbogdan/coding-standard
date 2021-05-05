@@ -63,8 +63,8 @@ final class Config extends BaseConfig
             'general_phpdoc_tag_rename' => [
                 'case_sensitive' => true,
                 'replacements' => [
-                    'inheritDoc' => 'inheritdoc'
-                ]
+                    'inheritDoc' => 'inheritdoc',
+                ],
             ],
             'global_namespace_import' => [
                 'import_classes' => true,
