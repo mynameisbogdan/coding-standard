@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace MNIB\CsFixer;
 
 use PhpCsFixer\Config as BaseConfig;
+use PhpCsFixer\ConfigInterface;
 
 final class Config extends BaseConfig
 {
@@ -41,6 +42,7 @@ final class Config extends BaseConfig
             'compact_nullable_typehint' => true,
             'concat_space' => ['spacing' => 'one'],
             'declare_equal_normalize' => ['space' => 'none'],
+            'echo_tag_syntax' => ['format' => 'long'],
             'explicit_indirect_variable' => true,
             'function_typehint_space' => true,
             'fully_qualified_strict_types' => true,
@@ -58,6 +60,12 @@ final class Config extends BaseConfig
                     'version',
                 ],
             ],
+            'general_phpdoc_tag_rename' => [
+                'case_sensitive' => true,
+                'replacements' => [
+                    'inheritDoc' => 'inheritdoc'
+                ]
+            ],
             'global_namespace_import' => [
                 'import_classes' => true,
                 'import_constants' => true,
@@ -67,6 +75,7 @@ final class Config extends BaseConfig
             'heredoc_to_nowdoc' => true,
             'include' => true,
             'increment_style' => ['style' => 'post'],
+            'is_null' => true,
             'standardize_increment' => true,
             'list_syntax' => ['syntax' => 'short'],
             'lowercase_cast' => true,
@@ -111,7 +120,6 @@ final class Config extends BaseConfig
             'no_null_property_initialization' => true,
             'no_singleline_whitespace_before_semicolons' => true,
             'no_short_bool_cast' => true,
-            'no_short_echo_tag' => true,
             'no_spaces_around_offset' => true,
             'no_superfluous_elseif' => true,
             'no_trailing_comma_in_singleline_array' => true,
@@ -132,7 +140,7 @@ final class Config extends BaseConfig
             'phpdoc_align' => true,
             'phpdoc_annotation_without_dot' => true,
             'phpdoc_indent' => true,
-            'phpdoc_inline_tag' => true,
+            'phpdoc_inline_tag_normalizer' => true,
             'phpdoc_line_span' => [
                 'const' => 'single',
                 'method' => 'multi',
@@ -148,6 +156,31 @@ final class Config extends BaseConfig
             'phpdoc_separation' => true,
             'phpdoc_single_line_var_spacing' => true,
             'phpdoc_summary' => true,
+            'phpdoc_tag_type' => [
+                'tags' => [
+                    'api' => 'annotation',
+                    'author' => 'annotation',
+                    'copyright' => 'annotation',
+                    'deprecated' => 'annotation',
+                    'example' => 'annotation',
+                    'global' => 'annotation',
+                    'inheritdoc' => 'inline',
+                    'internal' => 'annotation',
+                    'license' => 'annotation',
+                    'method' => 'annotation',
+                    'package' => 'annotation',
+                    'param' => 'annotation',
+                    'property' => 'annotation',
+                    'return' => 'annotation',
+                    'see' => 'annotation',
+                    'since' => 'annotation',
+                    'throws' => 'annotation',
+                    'todo' => 'annotation',
+                    'uses' => 'annotation',
+                    'var' => 'annotation',
+                    'version' => 'annotation',
+                ],
+            ],
             'phpdoc_trim' => true,
             'phpdoc_trim_consecutive_blank_line_separation' => true,
             'phpdoc_types' => true,
@@ -169,7 +202,7 @@ final class Config extends BaseConfig
             'standardize_not_equals' => true,
             'ternary_operator_spaces' => true,
             'ternary_to_null_coalescing' => true,
-            'trailing_comma_in_multiline_array' => true,
+            'trailing_comma_in_multiline' => ['elements' => ['arrays']],
             'trim_array_spaces' => true,
             'unary_operator_spaces' => true,
             'visibility_required' => [
@@ -188,7 +221,7 @@ final class Config extends BaseConfig
         ]);
     }
 
-    public function addRules(array $rules)
+    public function addRules(array $rules): ConfigInterface
     {
         $rules = array_replace($this->getRules(), $rules);
 
