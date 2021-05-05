@@ -75,7 +75,6 @@ final class Config extends BaseConfig
             'heredoc_to_nowdoc' => true,
             'include' => true,
             'increment_style' => ['style' => 'post'],
-            'is_null' => true,
             'standardize_increment' => true,
             'list_syntax' => ['syntax' => 'short'],
             'lowercase_cast' => true,
