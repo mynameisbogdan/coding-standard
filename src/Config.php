@@ -36,10 +36,12 @@ final class Config extends BaseConfig
             'braces' => ['allow_single_line_closure' => true],
             'cast_spaces' => ['space' => 'none'],
             'class_attributes_separation' => [
-                'const' => 'one',
-                'method' => 'one',
-                'property' => 'one',
-                'trait_import' => 'none',
+                'elements' => [
+                    'const' => 'one',
+                    'method' => 'one',
+                    'property' => 'one',
+                    'trait_import' => 'none',
+                ],
             ],
             'class_definition' => ['single_item_single_line' => true],
             'combine_consecutive_issets' => true,
