@@ -44,6 +44,7 @@ final class Config extends BaseConfig
                 ],
             ],
             'class_definition' => ['single_item_single_line' => true],
+            'clean_namespace' => true,
             'combine_consecutive_issets' => true,
             'combine_consecutive_unsets' => true,
             'compact_nullable_typehint' => true,
