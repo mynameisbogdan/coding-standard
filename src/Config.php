@@ -125,6 +125,7 @@ final class Config extends BaseConfig
             'no_short_bool_cast' => true,
             'no_spaces_around_offset' => true,
             'no_superfluous_elseif' => true,
+            'no_trailing_comma_in_list_call' => true,
             'no_trailing_comma_in_singleline_array' => true,
             'no_unneeded_control_parentheses' => true,
             'no_unneeded_curly_braces' => true,
