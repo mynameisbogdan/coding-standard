@@ -208,7 +208,7 @@ final class Config extends BaseConfig
             'ternary_to_null_coalescing' => true,
             'trailing_comma_in_multiline' => ['elements' => ['arrays']],
             'trim_array_spaces' => true,
-            'types_spaces' => ['space' => 'none'],
+            'types_spaces' => ['space' => 'single'],
             'unary_operator_spaces' => true,
             'visibility_required' => [
                 'elements' => [
