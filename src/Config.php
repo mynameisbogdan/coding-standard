@@ -14,11 +14,12 @@ final class Config extends BaseConfig
         parent::__construct('MNIB');
 
         $this->setRules([
-            '@PSR2' => true,
+            '@PSR12' => true,
 
             'align_multiline_comment' => true,
             'array_indentation' => true,
             'array_syntax' => ['syntax' => 'short'],
+            'backtick_to_shell_exec' => true,
             'binary_operator_spaces' => [
                 'default' => 'single_space',
             ],
@@ -43,7 +44,9 @@ final class Config extends BaseConfig
             'compact_nullable_typehint' => true,
             'concat_space' => ['spacing' => 'one'],
             'declare_equal_normalize' => ['space' => 'none'],
+            'declare_parentheses' => true,
             'echo_tag_syntax' => ['format' => 'long'],
+            'empty_loop_body' => true,
             'explicit_indirect_variable' => true,
             'function_typehint_space' => true,
             'fully_qualified_strict_types' => true,
@@ -76,7 +79,7 @@ final class Config extends BaseConfig
             'heredoc_to_nowdoc' => true,
             'include' => true,
             'increment_style' => ['style' => 'post'],
-            'standardize_increment' => true,
+            'lambda_not_used_import' => true,
             'list_syntax' => ['syntax' => 'short'],
             'lowercase_cast' => true,
             'lowercase_static_reference' => true,
@@ -199,11 +202,13 @@ final class Config extends BaseConfig
             'single_line_comment_style' => true,
             'single_quote' => true,
             'space_after_semicolon' => true,
+            'standardize_increment' => true,
             'standardize_not_equals' => true,
             'ternary_operator_spaces' => true,
             'ternary_to_null_coalescing' => true,
             'trailing_comma_in_multiline' => ['elements' => ['arrays']],
             'trim_array_spaces' => true,
+            'types_spaces' => ['space' => 'none'],
             'unary_operator_spaces' => true,
             'visibility_required' => [
                 'elements' => [
