@@ -209,6 +209,7 @@ final class Config extends BaseConfig
             'short_scalar_cast' => true,
             'single_blank_line_before_namespace' => true,
             'single_line_comment_style' => true,
+            'single_space_after_construct' => true,
             'single_quote' => true,
             'space_after_semicolon' => true,
             'standardize_increment' => true,
