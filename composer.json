@@ -11,6 +11,9 @@
         "squizlabs/php_codesniffer": "^3.6"
     },
     "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        },
         "preferred-install": {
             "*": "dist"
         },
