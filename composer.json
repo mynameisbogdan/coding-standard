@@ -23,8 +23,5 @@
             "*": "dist"
         },
         "sort-packages": true
-    },
-    "conflict": {
-        "friendsofphp/php-cs-fixer": "^3.16.0"
     }
 }
