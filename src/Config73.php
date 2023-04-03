@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace MNIB\CsFixer;
 
-final class Config extends AbstractConfig
+final class Config73 extends AbstractConfig
 {
     public function __construct()
     {
-        parent::__construct('MNIB');
+        parent::__construct('MNIB for PHP 7.3');
 
         $this->setRules([
             '@PSR12' => true,
