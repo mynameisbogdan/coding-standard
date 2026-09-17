@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace MNIB\CsFixer;
 
+/**
+ * @deprecated
+ */
 final class Config extends AbstractConfig
 {
     public function __construct()

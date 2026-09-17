@@ -173,7 +173,7 @@ abstract class AbstractConfig extends BaseConfig
                     'deprecated' => 'annotation',
                     'example' => 'annotation',
                     'global' => 'annotation',
-                    'inheritdoc' => 'inline',
+                    'inheritDoc' => 'inline',
                     'internal' => 'annotation',
                     'license' => 'annotation',
                     'method' => 'annotation',
