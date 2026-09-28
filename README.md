@@ -14,10 +14,16 @@ $finder = PhpCsFixer\Finder::create()
     ->name('*.php')
 ;
 
-return (new MNIB\CsFixer\Config())
+return (new PhpCsFixer\Config())
     ->setFinder($finder)
+    ->registerCustomRuleSets([
+        new MNIB\CsFixer\MNIBStandardSet(),
+    ])
+    ->setParallelConfig(PhpCsFixer\Runner\Parallel\ParallelConfigFactory::detect())
     ->setRiskyAllowed(true)
-    ->addRules([
+    ->setRules([
+        '@MNIB/Standard' => true,
+
         'declare_strict_types' => true,
         'strict_comparison' => true,
         'strict_param' => true,

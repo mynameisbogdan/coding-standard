@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace MNIB\CsFixer;
 
+use PhpCsFixer\Fixer\Phpdoc\PhpdocSeparationFixer;
 use PhpCsFixer\RuleSet\RuleSetDefinitionInterface;
 
 final class MNIBStandardSet implements RuleSetDefinitionInterface
@@ -137,6 +138,18 @@ final class MNIBStandardSet implements RuleSetDefinitionInterface
                     'throws',
                     'uses',
                 ],
+            ],
+            'phpdoc_separation' => [
+                'groups' => [
+                    ['Annotation', 'NamedArgumentConstructor', 'Target'],
+                    ['ORM\\*'],
+                    ['Assert\\*'],
+                    ...PhpdocSeparationFixer::OPTION_GROUPS_DEFAULT,
+                    ['return'],
+                    ['param'],
+                    ['throws'],
+                ],
+                'skip_unlisted_annotations' => true,
             ],
             'phpdoc_tag_type' => [
                 'tags' => [
