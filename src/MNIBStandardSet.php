@@ -85,6 +85,9 @@ final class MNIBStandardSet implements RuleSetDefinitionInterface
                 'on_multiline' => 'ensure_fully_multiline',
             ],
             'method_chaining_indentation' => true,
+            'multiline_promoted_properties' => [
+                'minimum_number_of_parameters' => 2,
+            ],
             'multiline_whitespace_before_semicolons' => ['strategy' => 'new_line_for_chained_calls'],
             'no_extra_blank_lines' => [
                 'tokens' => [
